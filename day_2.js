@@ -1,3 +1,7 @@
+// Write a program to reverse a string
+// String can be reversed by iterating it and storing it in reverse order
+// String can also be reversed by converting it to array, then joining it after reversing
+
 const str1 = "JavaScript is awesome";
 const str2 = "Peter Parker is Spiderman";
 const str3 = "codedamn";
