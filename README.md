@@ -15,3 +15,6 @@ Write a program to reverse a given integer number
 
 ### DAY 4
 Write a function which can convert the time input given in 12 hours format to 24 hours format
+
+### DAY 5
+Write a function which accepts a string argument and returns the count of characters between the first and last character 'X'
