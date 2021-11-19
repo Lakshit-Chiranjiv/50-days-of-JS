@@ -21,3 +21,9 @@ Write a function which accepts a string argument and returns the count of charac
 
 ### DAY 6
 Write a function to truncate a string to a certain number of words
+
+### DAY 7
+Create a regular expression to validate if the given input is valid Indian mobile number or not
+
+### DAY 8
+Write a function which accepts two valid dates and returns the difference between them as number of days
