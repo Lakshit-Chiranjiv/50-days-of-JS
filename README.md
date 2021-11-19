@@ -27,3 +27,6 @@ Create a regular expression to validate if the given input is valid Indian mobil
 
 ### DAY 8
 Write a function which accepts two valid dates and returns the difference between them as number of days
+
+### DAY 9
+Write a function to check if an object is empty or not in javaScript?
