@@ -30,3 +30,6 @@ Write a function which accepts two valid dates and returns the difference betwee
 
 ### DAY 9
 Write a function to check if an object is empty or not in javaScript?
+
+### DAY 10
+Write a function to remove array element based on object property?
