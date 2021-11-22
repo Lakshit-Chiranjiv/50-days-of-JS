@@ -36,3 +36,6 @@ Write a function to remove array element based on object property?
 
 ### DAY 11
 Return the N-th value of the Fibonacci sequence
+
+### DAY 12
+Given a number from 0 to 999,999,999,999, spell out that number in English.
