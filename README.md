@@ -39,3 +39,6 @@ Return the N-th value of the Fibonacci sequence
 
 ### DAY 12
 Given a number from 0 to 999,999,999,999, spell out that number in English.
+
+### DAY 13
+Convert given seconds to space age on all planets of our solar system
