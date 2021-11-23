@@ -35,3 +35,35 @@
 // 12345 should give twelve thousand three hundred forty-five.
 
 // The program must also report any values that are out of range.
+
+
+function num_to_words(n){
+    const ones = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+    const tens = ['','ten','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
+    const hund = 'hundred';
+    const thsnd = 'thousand';
+    const mill = 'million';
+    const bill = 'billion';
+
+    if(n>=0 && n<1000000000);
+    {
+        sn = n.toString();
+        sn_len = sn.length;
+        if(sn_len === 1 && n<20)
+            return ones[n];
+        else if(sn_len===2 && n>19)
+        {
+            let rst = tens[Number(sn[0])] +' '+ (sn[1]==='0'?'':ones[Number(sn[1])]);
+            return rst;
+        }
+        else if(sn_len===3)
+        {
+            let rst = (sn[0]==='0'?'':ones[Number(sn[0])]) + ' ' + hund + ' and '+ tens[Number(sn[1])] +' '+ (sn[2]==='0'?'':ones[Number(sn[2])]);
+
+            return rst;
+        }
+    }
+}
+
+
+console.log(num_to_words(100));
