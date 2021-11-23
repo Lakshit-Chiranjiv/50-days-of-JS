@@ -37,33 +37,211 @@
 // The program must also report any values that are out of range.
 
 
-function num_to_words(n){
-    const ones = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
-    const tens = ['','ten','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
-    const hund = 'hundred';
-    const thsnd = 'thousand';
-    const mill = 'million';
-    const bill = 'billion';
+// const ones = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+// const tens = ['','ten','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
+// const hund = 'hundred';
+// const thsnd = 'thousand';
+// const mill = 'million';
+// const bill = 'billion';
+// const trill = 'trillion';
 
-    if(n>=0 && n<1000000000);
+// let hund_part,th_part,mil_part,bil_part,rstn;
+
+// function num_to_words_till_2(n){
+//     if(n>=0)
+//     {
+//         sn = n.toString();
+//         sn_len = sn.length;
+//         if(n<20)
+//             return ones[n];
+//         else if(sn_len===2 && n>19)
+//         {
+//             let rst = tens[Number(sn[0])] +'-'+ (sn[1]==='0'?'':ones[Number(sn[1])]);
+//             return rst;
+//         }
+//     }
+// }
+
+// function num_to_words_till_3(n){
+//     if(n>=0)
+//     {
+//         sn = n.toString();
+//         sn_len = sn.length;
+//         if(sn_len<3)
+//             return num_to_words_till_2(n);
+//         if(sn_len===3)
+//         {
+//             let rst = (sn[0]==='0'?'':ones[Number(sn[0])]) + ' ' + hund + (((Number(sn.slice(1))!==0))?' ':'') + ((Number(sn.slice(1))<20 && Number(sn.slice(1))!==0)?ones[Number(sn.slice(1))]:tens[Number(sn[1])] +(((Number(sn.slice(1))!==0 && (Number(sn.slice(2)))!==0))?'-':'')+ (sn[2]==='0'?'':ones[Number(sn[2])]));
+//             return rst;
+//         }
+//     }
+// }
+
+// function bignum_checks_for0(n){
+//     if(n===0) return '';
+
+//     return num_to_words_till_3(n);
+// }
+
+// function bignumwords_checks_for0(n,str){
+//     if(n===0) return '';
+
+//     return (' '+str);
+// }
+
+// function num_to_words(n){
+
+//     if(n>=0 && n<1000000000000)
+//     {
+//         sn = n.toString();
+//         sn_len = sn.length;
+
+//         switch (sn_len) {
+//             case 1:
+//             case 2:
+//             case 3:
+//                 return num_to_words_till_3(n);
+
+//             case 4:
+//             case 5:
+//             case 6:
+//                 hund_part = sn.slice(-3);
+//                 th_part = sn.slice(-6,-3);
+//                 rstn = bignum_checks_for0(Number(th_part)) + bignumwords_checks_for0(Number(th_part),thsnd) + ' ' + bignum_checks_for0(Number(hund_part));
+//                 return rstn;
+
+//             case 7:
+//             case 8:
+//             case 9:
+//                 hund_part = sn.slice(-3);
+//                 th_part = sn.slice(-6,-3);
+//                 mil_part = sn.slice(-9,-6);
+//                 rstn = bignum_checks_for0(Number(mil_part)) + bignumwords_checks_for0(Number(mil_part),mill) + ' ' + bignum_checks_for0(Number(th_part)) + bignumwords_checks_for0(Number(th_part),thsnd) + ' ' + bignum_checks_for0(Number(hund_part));
+//                 return rstn;
+
+//             case 10:
+//             case 11:
+//             case 12:
+//                 hund_part = sn.slice(-3);
+//                 th_part = sn.slice(-6,-3);
+//                 mil_part = sn.slice(-9,-6);
+//                 bil_part = sn.slice(-12,-9);
+//                 rstn = bignum_checks_for0(Number(bil_part)) + bignumwords_checks_for0(Number(bil_part),bill) + ' ' + bignum_checks_for0(Number(mil_part)) + bignumwords_checks_for0(Number(mil_part),mill) + ' ' + bignum_checks_for0(Number(th_part)) + bignumwords_checks_for0(Number(th_part),thsnd) + ' ' + bignum_checks_for0(Number(hund_part));
+//                 return rstn;
+        
+//             default:
+//                 break;
+//         }
+//     }
+//     else
+//         return "Out of Range";
+// }
+
+
+// console.log(num_to_words(56));
+
+
+
+const ones = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+const tens = ['','ten','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
+const hund = 'hundred';
+const thsnd = 'thousand';
+const mill = 'million';
+const bill = 'billion';
+const trill = 'trillion';
+
+let hund_part,th_part,mil_part,bil_part,rstn;
+
+function num_to_words_till_2(n){
+    if(n>=0)
     {
         sn = n.toString();
         sn_len = sn.length;
-        if(sn_len === 1 && n<20)
+        if(n<20)
             return ones[n];
         else if(sn_len===2 && n>19)
         {
-            let rst = tens[Number(sn[0])] +' '+ (sn[1]==='0'?'':ones[Number(sn[1])]);
-            return rst;
-        }
-        else if(sn_len===3)
-        {
-            let rst = (sn[0]==='0'?'':ones[Number(sn[0])]) + ' ' + hund + ' and '+ tens[Number(sn[1])] +' '+ (sn[2]==='0'?'':ones[Number(sn[2])]);
-
+            let rst = tens[Number(sn[0])] +'-'+ (sn[1]==='0'?'':ones[Number(sn[1])]);
             return rst;
         }
     }
 }
 
+function num_to_words_till_3(n){
+    if(n>=0)
+    {
+        sn = n.toString();
+        sn_len = sn.length;
+        if(sn_len<3)
+            return num_to_words_till_2(n);
+        if(sn_len===3)
+        {
+            let rst = (sn[0]==='0'?'':ones[Number(sn[0])]) + ' ' + hund + (((Number(sn.slice(1))!==0))?' ':'') + ((Number(sn.slice(1))<20 && Number(sn.slice(1))!==0)?ones[Number(sn.slice(1))]:tens[Number(sn[1])] +(((Number(sn.slice(1))!==0 && (Number(sn.slice(2)))!==0))?'-':'')+ (sn[2]==='0'?'':ones[Number(sn[2])]));
+            return rst;
+        }
+    }
+}
 
-console.log(num_to_words(100));
+function bignum_checks_for0(n){
+    if(n===0) return '';
+
+    return num_to_words_till_3(n);
+}
+
+function bignumwords_checks_for0(n,str){
+    if(n===0) return '';
+
+    return (' '+str);
+}
+
+const sayNumberInEnglish = (n /* ADD MORE PARAMETERS IF NEEDED */) => {
+	// Write your solution here
+    if(n>=0 && n<1000000000000)
+    {
+        sn = n.toString();
+        sn_len = sn.length;
+
+        switch (sn_len) {
+            case 1:
+            case 2:
+            case 3:
+                return num_to_words_till_3(n);
+
+            case 4:
+            case 5:
+            case 6:
+                hund_part = sn.slice(-3);
+                th_part = sn.slice(-6,-3);
+                rstn = bignum_checks_for0(Number(th_part)) + bignumwords_checks_for0(Number(th_part),thsnd) + ' ' + bignum_checks_for0(Number(hund_part));
+                return rstn;
+
+            case 7:
+            case 8:
+            case 9:
+                hund_part = sn.slice(-3);
+                th_part = sn.slice(-6,-3);
+                mil_part = sn.slice(-9,-6);
+                rstn = bignum_checks_for0(Number(mil_part)) + bignumwords_checks_for0(Number(mil_part),mill) + ' ' + bignum_checks_for0(Number(th_part)) + bignumwords_checks_for0(Number(th_part),thsnd) + ' ' + bignum_checks_for0(Number(hund_part));
+                return rstn;
+
+            case 10:
+            case 11:
+            case 12:
+                hund_part = sn.slice(-3);
+                th_part = sn.slice(-6,-3);
+                mil_part = sn.slice(-9,-6);
+                bil_part = sn.slice(-12,-9);
+                rstn = bignum_checks_for0(Number(bil_part)) + bignumwords_checks_for0(Number(bil_part),bill) + ' ' + bignum_checks_for0(Number(mil_part)) + bignumwords_checks_for0(Number(mil_part),mill) + ' ' + bignum_checks_for0(Number(th_part)) + bignumwords_checks_for0(Number(th_part),thsnd) + ' ' + bignum_checks_for0(Number(hund_part));
+                return rstn;
+        
+            default:
+                break;
+        }
+    }
+    else
+        return "Out of Range";     
+}
+
+console.log(`5635 in english is: ${sayNumberInEnglish(5635)}`);
+console.log(`2852203 in english is: ${sayNumberInEnglish(2852203)}`);
+console.log(`5140454 in english is: ${sayNumberInEnglish(5140454)}`);
