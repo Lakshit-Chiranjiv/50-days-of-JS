@@ -42,3 +42,6 @@ Given a number from 0 to 999,999,999,999, spell out that number in English.
 
 ### DAY 13
 Convert given seconds to space age on all planets of our solar system
+
+### DAY 14
+Convert given array of digits of a base to another asked base
