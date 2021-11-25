@@ -45,3 +45,6 @@ Convert given seconds to space age on all planets of our solar system
 
 ### DAY 14
 Convert given array of digits of a base to another asked base
+
+### DAY 15
+Determine if a sentence is a pangram
