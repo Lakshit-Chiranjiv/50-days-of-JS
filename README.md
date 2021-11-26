@@ -48,3 +48,6 @@ Convert given array of digits of a base to another asked base
 
 ### DAY 15
 Determine if a sentence is a pangram
+
+### DAY 16
+Ask the Bob
