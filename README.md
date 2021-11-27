@@ -51,3 +51,6 @@ Determine if a sentence is a pangram
 
 ### DAY 16
 Ask the Bob
+
+### DAY 17
+Longest Consecutive Sequence
