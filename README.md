@@ -54,3 +54,6 @@ Ask the Bob
 
 ### DAY 17
 Longest Consecutive Sequence
+
+### DAY 18
+Calculate Grains on a given square on a chessboard
