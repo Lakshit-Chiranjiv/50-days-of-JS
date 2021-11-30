@@ -60,3 +60,6 @@ Calculate Grains on a given square on a chessboard
 
 ### DAY 19
 Resistor Color map
+
+### DAY 20
+Add two numbers
