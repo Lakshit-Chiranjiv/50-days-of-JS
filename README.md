@@ -63,3 +63,6 @@ Resistor Color map
 
 ### DAY 20
 Add two numbers
+
+### DAY 21
+Union of Two Arrays
