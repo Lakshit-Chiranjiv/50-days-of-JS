@@ -66,3 +66,6 @@ Add two numbers
 
 ### DAY 21
 Union of Two Arrays
+
+### DAY 22
+Unique In Order
