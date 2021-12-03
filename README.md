@@ -69,3 +69,6 @@ Union of Two Arrays
 
 ### DAY 22
 Unique In Order
+
+### DAY 23
+Equal Sides Of An Array
