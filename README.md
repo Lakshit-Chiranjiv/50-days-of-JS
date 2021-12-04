@@ -72,3 +72,6 @@ Unique In Order
 
 ### DAY 23
 Equal Sides Of An Array
+
+### DAY 24
+Write Number in Expanded Form
