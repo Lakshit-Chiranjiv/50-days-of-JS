@@ -75,3 +75,6 @@ Equal Sides Of An Array
 
 ### DAY 24
 Write Number in Expanded Form
+
+### DAY 25
+Stop gninnipS My sdroW!
