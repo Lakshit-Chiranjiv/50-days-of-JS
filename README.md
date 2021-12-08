@@ -81,3 +81,6 @@ Stop gninnipS My sdroW!
 
 ### DAY 26
 Find the odd int
+
+### DAY 27
+Vowel Count
