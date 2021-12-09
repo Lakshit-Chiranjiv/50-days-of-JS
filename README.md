@@ -84,3 +84,6 @@ Find the odd int
 
 ### DAY 27
 Vowel Count
+
+### DAY 28
+WeIrD StRiNg CaSe
