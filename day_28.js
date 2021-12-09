@@ -5,16 +5,9 @@
 
 function toWeirdCase(string) {
   // Your code goes here
-  let arr = string.split(' ');
-  let retstr = '',wrd;
-  for(let i =0;i<arr.length;i++)
-  {
-      wrd='';
-      for(let j=0;j<arr[i].length;j++)
-          wrd += (j%2===0)?arr[i][j].toUpperCase():arr[i][j].toLowerCase();
-      retstr += wrd + ' ';
-  }
-  retstr = retstr.slice(0,retstr.length-1);
+  let retstr = '';
+  for(let i =0;i<string.length;i++)
+      retstr += (i%2===0)?string[i].toUpperCase():string[i].toLowerCase();
   return retstr;
 }
 
