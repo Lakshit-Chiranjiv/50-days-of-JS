@@ -90,3 +90,6 @@ WeIrD StRiNg CaSe
 
 ### DAY 29
 Mumbling
+
+### DAY 30
+Mexican Wave
