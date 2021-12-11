@@ -93,3 +93,6 @@ Mumbling
 
 ### DAY 30
 Mexican Wave
+
+### DAY 31
+Write a Program to Find the Factorial of a Number
