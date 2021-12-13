@@ -99,3 +99,6 @@ Write a Program to Find the Factorial of a Number
 
 ### DAY 32
 Write a program to find the greatest common divisor (gcd) of two positive numbers
+
+### DAY 33
+Write a program to print unique values from an array
