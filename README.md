@@ -117,3 +117,6 @@ Tell if its a leap year
 
 ### DAY 38
 Luhn algorithm
+
+### DAY 39
+Mixed Juices
