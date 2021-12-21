@@ -36,7 +36,7 @@ const needsLicense = (kind) => {
 }
 
 const chooseVehicle = (option1, option2) => {
-	return ((option1>option2)?option2:option1);
+	return ((option1>option2)?option2:option1)+' is clearly the better choice.';
 }
 
 const calculateResellPrice = (originalPrice, age) => {
