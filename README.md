@@ -120,3 +120,6 @@ Luhn algorithm
 
 ### DAY 39
 Mixed Juices
+
+### DAY 40
+Vehicle Purchase
