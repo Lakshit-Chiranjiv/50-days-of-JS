@@ -123,3 +123,6 @@ Mixed Juices
 
 ### DAY 40
 Vehicle Purchase
+
+### DAY 41
+Categorize New Member
