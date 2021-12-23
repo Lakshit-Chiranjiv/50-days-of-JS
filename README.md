@@ -126,3 +126,6 @@ Vehicle Purchase
 
 ### DAY 41
 Categorize New Member
+
+### DAY 42
+Sum of two lowest positive integers
