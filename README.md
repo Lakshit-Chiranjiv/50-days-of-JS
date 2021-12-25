@@ -135,3 +135,6 @@ Highest Scoring Word
 
 ### DAY 44
 Count the divisors of a number
+
+### DAY 45
+Find The Parity Outlier
