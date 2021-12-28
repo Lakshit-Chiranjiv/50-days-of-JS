@@ -141,3 +141,6 @@ Find The Parity Outlier
 
 ### DAY 46
 A Needle in the Haystack
+
+### DAY 47
+Isograms
