@@ -147,3 +147,6 @@ Isograms
 
 ### DAY 48
 Human readable duration format
+
+### DAY 49
+Is this a triangle?
