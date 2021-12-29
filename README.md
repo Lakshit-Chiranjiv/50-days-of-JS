@@ -144,3 +144,6 @@ A Needle in the Haystack
 
 ### DAY 47
 Isograms
+
+### DAY 48
+Human readable duration format
