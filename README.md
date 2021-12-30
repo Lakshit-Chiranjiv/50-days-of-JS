@@ -150,3 +150,6 @@ Human readable duration format
 
 ### DAY 49
 Is this a triangle?
+
+### DAY 50
+Get the Middle Character
